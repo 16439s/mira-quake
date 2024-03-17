@@ -30,6 +30,13 @@ function fetchEarthquakeData() {
                 const earthquakeData = JSON.parse(data)[0];
                 console.log('Received earthquake data:', earthquakeData);
 
+                // 初回起動時はトリガーを発動させる
+                if (!previousEarthquakeData) {
+                    postToMisskey(earthquakeData);
+                    previousEarthquakeData = earthquakeData;
+                    return;
+                }
+
                 // 地震情報が更新された場合のみMisskeyに投稿
                 if (!isEqual(earthquakeData)) {
                     postToMisskey(earthquakeData);
@@ -99,6 +106,9 @@ function postToMisskey(earthquakeData: any) {
         console.error('Error posting to Misskey:', error);
     });
 }
+
+// 初回起動時に地震データを取得して処理する
+fetchEarthquakeData();
 
 // 1分ごとに地震データを取得して処理する
 setInterval(fetchEarthquakeData, 60000);
