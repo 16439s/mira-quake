@@ -76,8 +76,8 @@ function postToMisskey(earthquakeData: any) {
     // Misskeyに投稿するデータの準備
     const postData = {
         visibility: 'public',
-        text: message,
-        localonly: 'true'
+        localOnly: 'true',
+        text: message
     };
 
     // MisskeyにPOSTリクエストを送信
