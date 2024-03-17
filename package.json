@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node server.ts",
-    "build": "tsc && mkdir dist & mv server.js dist/server.js"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "16439s",
