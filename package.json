@@ -1,0 +1,19 @@
+{
+  "name": "mira-quake",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "16439s",
+  "license": "AGPL-3.0-only",
+  "dependencies": {
+    "typescript": "^5.4.2",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.10"
+  }
+}

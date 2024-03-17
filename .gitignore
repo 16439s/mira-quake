@@ -1,0 +1,17 @@
+# Ignore build output
+/dist/
+/out/
+
+# Ignore Node.js dependencies
+/node_modules/
+
+# Ignore TypeScript compilation output
+*.js
+*.js.map
+
+# Ignore environment-specific files
+.env
+
+# Ignore IDE/editor-specific files
+.vscode/
+.idea/
