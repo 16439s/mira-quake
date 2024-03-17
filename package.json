@@ -10,6 +10,8 @@
   "author": "16439s",
   "license": "AGPL-3.0-only",
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
     "typescript": "^5.4.2",
     "ws": "^8.16.0"
   },
